@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitscope"
+version = "1.0.0"
+description = "A read-only Textual TUI for exploring git commit history."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [
+    { name = "gitscope contributors" }
+]
+dependencies = [
+    "textual>=1.0"
+]
+
+[project.scripts]
+gitscope = "gitscope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
