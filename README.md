@@ -22,6 +22,14 @@ Prerequisites:
 - A local `git` binary available on `PATH`
 - A git repository already present on disk
 
+Install from PyPI:
+
+```bash
+python -m pip install git-scope
+```
+
+The installed command is still `gitscope`.
+
 Install from source:
 
 ```bash
