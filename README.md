@@ -25,7 +25,7 @@ Prerequisites:
 Install from PyPI:
 
 ```bash
-python -m pip install git-scope
+python -m pip install devaansh-gitscope
 ```
 
 The installed command is still `gitscope`.
